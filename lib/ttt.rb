@@ -1,14 +1,7 @@
 class Game
 
   def initialize
-
   end
-
-#array = [0, 1, 2
-#         3, 4, 5
-#         6, 7, 8]
-
-#problems = 87562
 
   def x_victory?
     if Board.all[0].show_mark == "X" && Board.all[1].show_mark == "X" && Board.all[2].show_mark == "X"
@@ -77,28 +70,14 @@ class Board
   end
 end
 
-
-
 class Space
   attr_reader :mark
 
   def initialize
-    @mark = " "
+    @mark = ""
   end
 
   def mark(mark)
-    @mark = mark
-  end
-
-  def show_mark
-    @mark
-  end
-end
-
-class Player
-  attr_reader :mark
-
-  def initialize(mark)
     @mark = mark
   end
 
