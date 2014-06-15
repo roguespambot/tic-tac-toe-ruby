@@ -50,9 +50,6 @@ def player_turn(player)
 end
 
 def computer_player_turn(player)
-# [0 1 2
-#  3 4 5
-#  6 7 8]
 
   if Board.all[4].show_mark == "4"
     space_to_mark = 4
